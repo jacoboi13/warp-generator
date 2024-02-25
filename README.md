@@ -1,20 +1,19 @@
 # warp-generator 
-Một tập lệnh có thể tạo ra lưu lượng Warp+ không giới hạn và hoàn toàn miễn phí!
-# Cách Dùng:
+A script that can generate unlimited Warp+ traffic for free!
+# Usage:
 
-Tập lệnh này có thể hoạt động cả trên Windows lẫn Android (Termux), dưới đây là hướng dẫn:
+This script can work both on Window Terminal and Android Terminal (Termux), here are the instructions:
 
 ```
-
-pip install requirements.txt
-
 python ndbiaw.py
-
 ```
-# NOTE
+***This script can also work for any Jailbroken iDevice terminal (NewTerm)***
+
+# Note:
+
 Public ID is your ID, not your key or public key.
 Get the Public ID at: Advanced => Diagnostic => ID
+
 # Important!!!
 
 This script is for educational purposes only. I am not responsible for the damage you cause while using this script!
-
