@@ -54,17 +54,9 @@ while True:
 		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 99%", "[■■■■■■■■■■] 100%"] 
 		for i in range(len(animation)):
 			time.sleep(0.5)
-			sys.stdout.write("\r Adding traffic:" + animation[i % len(animation)])
-		print("")
-		print(f"\n Added traffic to inputed ID") 
-		print("")
-		print(f" {g} GB has been added to your account.")
-		print("")
-		print(f" Total: {g} Success | {b} Failed")
+			sys.stdout.write(animation[i % len(animation)])
 		time.sleep(20)
-		print( " [✓]Starting the process again", end="\r")
 	else:
 		b = b + 1
 		print("An error occurred while connecting to CloudFlare's servers")
 		print(f"[#] Total: {g} Success | {b} Failed")
-		print("Retrying...")
