@@ -6,7 +6,6 @@ import string
 import time
 import os
 import sys
-os.system('cls' if os.name == 'nt' else 'clear')
 referrer = os.environ['WARP_VARIABLE_ID']
 def genString(stringLength):
 	try:
@@ -52,22 +51,20 @@ while True:
 	result = run()
 	if result == 200:
 		g = g + 1
-		os.system('cls' if os.name == 'nt' else 'clear')
-		animation = ["[-][■□□□□□□□□□] 10%","[\][■■□□□□□□□□] 20%", "[|][■■■□□□□□□□] 30%", "[/][■■■■□□□□□□] 40%", "[-][■■■■■□□□□□] 50%", "[\][■■■■■■□□□□] 60%", "[|][■■■■■■■□□□] 70%", "[/][■■■■■■■■□□] 80%", "[-][■■■■■■■■■□] 90%", "[\][■■■■■■■■■■] 99%", "[✓][■■■■■■■■■■] 100%"] 
+		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 99%", "[■■■■■■■■■■] 100%"] 
 		for i in range(len(animation)):
 			time.sleep(0.5)
 			sys.stdout.write("\r Adding traffic:" + animation[i % len(animation)])
-			sys.stdout.flush()
 		print("")
 		print(f"\n Added traffic to inputed ID") 
 		print("")
 		print(f" {g} GB has been added to your account.")
 		print("")
-		print(f" Total: {g} Success {b} Failed")
-		time.sleep(30)
+		print(f" Total: {g} Success | {b} Failed")
+		time.sleep(20)
 		print( " [✓]Starting the process again", end="\r")
 	else:
 		b = b + 1
-		os.system('cls' if os.name == 'nt' else 'clear')
 		print("An error occurred while connecting to CloudFlare's servers")
-		print(f"[#] Total: {g} Success {b} Failed")	
+		print(f"[#] Total: {g} Success | {b} Failed")
+		print("Retrying...")
