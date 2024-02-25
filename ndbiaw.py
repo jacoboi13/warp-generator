@@ -24,7 +24,7 @@ print('''\ \ \__ \  \ \  __\   \ \ \-.  \  \ \  __\   \ \  __<   \ \  __ \  \/_/
 print(''''\ \_____\  \ \_____\  \ \_\\"\_\   \ \_____\  \ \_\ \_\  \ \_\ \_\    \ \_\  \ \_____\  \ \_\ \_\'''')
 print('''' \/_____/   \/_____/   \/_/ \/_/   \/_____/   \/_/ /_/   \/_/\/_/     \/_/   \/_____/   \/_/ /_/''''')
 print("")
-referrer = os.environ('WARP_VARIABLE_ID')
+referrer = os.environ['WARP_VARIABLE_ID']
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
