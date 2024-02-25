@@ -5,9 +5,9 @@ name: Warp Des
 
 on:
   push:
-    branches: [ "workflow" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "workflow" ]
+    branches: [ "mainw" ]
 
 permissions:
   contents: read
